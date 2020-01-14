@@ -108,9 +108,9 @@ typedef NS_ENUM(NSInteger, UIGestureRecognizerState) {
 当值为NO时，当手势识别失败时会立即调用touchesEnded函数。
 >  
 > 总结：
-1、cancelsTouchesInView为ture，如果手势识别成功，则触摸事件touches begin/end 会被调用。
-2、cancelsTouchesInView为false，如果手势识别成功，则触摸事件touches begin/cancel 会被调用。
-3、delaysTouchesBegan为true，如果手势识别成功，则触摸事件touches begin/cancle/end 都不会被调用。  
+1、cancelsTouchesInView为ture，如果手势识别成功，则触摸事件touches begin/end 会被调用。  
+2、cancelsTouchesInView为false，如果手势识别成功，则触摸事件touches begin/cancel 会被调用。  
+3、delaysTouchesBegan为true，如果手势识别成功，则触摸事件touches begin/cancle/end 都不会被调用。    
 4、一般来说手势识别器的回调函数会比hit-test view的触摸事件的晚一些（因为手势识别器只有在手势识别出来之后才会触发回调函数），通过上面三个属性的组合，使的手势识别器对事件的处理优先级更高。
 >
 
