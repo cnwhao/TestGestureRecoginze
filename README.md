@@ -28,8 +28,8 @@ Demo：[https://github.com/cnwhao/TestGestureRecoginze.git](https://github.com/c
     * 通过触摸事件的监听推断出手势类型十分复杂。
 
  2. iOS3.2之后，使用手势识别功能（Gesture Recognizer）
-    ```Swift
-    extension UIView {
+```Swift
+extension UIView {
 
     @available(iOS 3.2, *)
     open var gestureRecognizers: [UIGestureRecognizer]?
@@ -43,9 +43,7 @@ Demo：[https://github.com/cnwhao/TestGestureRecoginze.git](https://github.com/c
     @available(iOS 6.0, *)
     open func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool
 }
-    ```
----
-
+```
 
 ---
 
@@ -81,7 +79,7 @@ typedef NS_ENUM(NSInteger, UIGestureRecognizerState) {
     // 手势失败，恢复至Possible状态
     UIGestureRecognizerStateFailed,
     // 识别到手势识别
-    UIGestureRecognizerStateRecognized = UIGestureRecognizerStateEnded
+    UIGestureRecognizerStateRecognized,
 };
 ```
 
