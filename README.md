@@ -107,7 +107,7 @@ typedef NS_ENUM(NSInteger, UIGestureRecognizerState) {
 >> 当值为YES时（默认值），当手势识别失败时会延迟（约0.15ms）调用touchesEnded函数。
 当值为NO时，当手势识别失败时会立即调用touchesEnded函数。
 >  
-> 总结：
+> 总结：  
 1、cancelsTouchesInView为ture，如果手势识别成功，则触摸事件touches begin/end 会被调用。  
 2、cancelsTouchesInView为false，如果手势识别成功，则触摸事件touches begin/cancel 会被调用。  
 3、delaysTouchesBegan为true，如果手势识别成功，则触摸事件touches begin/cancle/end 都不会被调用。    
