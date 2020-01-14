@@ -8,7 +8,7 @@
 
 ---
 
-Demo：[https://github.com/cnwhao/TestHitTest.git](https://github.com/cnwhao/TestHitTest.git)
+Demo：[https://github.com/cnwhao/TestGestureRecoginze.git](https://github.com/cnwhao/TestGestureRecoginze.git)
 
 ---
 
